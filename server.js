@@ -48,6 +48,11 @@ app.get('/about', (req, res) => {
     title: "ABOUT page Dynamic",
   });
 });
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    title: "Kevin's Projects",
+  });
+});
 
 app.get('/bad', (req, res) => {
   res.send({
